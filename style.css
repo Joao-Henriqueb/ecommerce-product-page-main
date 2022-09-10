@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    background-color:  hsl(25, 100%, 94%);
+
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*fazendo menu do celular*/
+
+.listamenu{
+    display: none;
+    position: absolute;
+    right: 30%;
+    height:100vh;
+    width: 70%;
+    padding: 1rem;
+    background-color: white;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.listamenu li:first-child{
+    margin-top: 5rem;
+}
+.listamenu li {
+    margin: 2rem 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.close{
+    display: none;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    z-index: 1;
+}
+
+
+
+
+
+/*menu dp celular*/
+.menu{
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.menu2{
+    padding: 1rem;
+}
+.menu2> img:nth-child(2){
+    width: 30px;
+    margin-left: 1rem;
+}
+
+.menu2 .arrow{
+    width: 360px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 3%;
+    bottom:60%;
+}
+.menu2> .arrow div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/*fazendo menu do celular/*
+
+
+/*main*/
+main{
+    width: 100%;
+}
+#box> .imgatual{
+    width: 100%;
+}
+#thumb{
+    display: none;
+}
+.box2{
+    padding: 1rem;
+}
+.box2 h4{
+    font-weight:700;
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+}
+.box2 h1{
+    font-weight: 700;
+    font-size: 1.8em;
+    margin:1rem 0;
+}
+.box2 p {
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.box2 .valor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.box2 .valor span:nth-child(1){
+    font-size: 1.8em;
+    font-weight: 700;
+
+}
+.box2 .valor span:nth-child(2){
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    margin: 0 2rem;
+}
+.box2 .valor s{
+    color:  hsl(220, 14%, 75%);
+    margin-left: 6rem;
+
+}
+.box2 .addcar{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box2 .addcar .qntidade{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box2 .addcar .qntidade span {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.box2 .addcar button{
+    margin:2rem 0 5rem 0;
+    width: 100%;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    padding: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+#thumb img{
+    display: block;
+    float: left;
+    cursor: pointer;
+}
