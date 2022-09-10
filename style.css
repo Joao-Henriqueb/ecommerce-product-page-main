@@ -54,6 +54,7 @@ header{
     left: 4%;
     top: 2%;
     z-index: 3;
+    cursor: pointer;
 }
 
 
@@ -70,8 +71,14 @@ header{
     align-items: center;
     position: relative;
 }
+.menu .iconmenu{
+    cursor: pointer;
+}
 .menu2{
     padding: 1rem;
+}
+.menu2 .carrinho{
+    cursor: pointer
 }
 .menu2> img:nth-child(2){
     width: 30px;
@@ -132,6 +139,7 @@ header{
 }
 .descricaoCompra .delete{
     float: right;
+    cursor:pointer;
 }
 .descricaoCompra span{
     font-size: 18px;
@@ -239,6 +247,7 @@ main{
     font-weight: 700;
     border-radius: 10px;
     font-size: 16px;
+    cursor: pointer;
 
 }
 

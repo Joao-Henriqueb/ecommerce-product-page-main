@@ -15,6 +15,8 @@ let descricaoCompra=document.querySelector(".descricaoCompra")
 let qntidadecompradaHTML=document.querySelector(".qntidadecompradaHTML")
 let totalcompra=document.querySelector(".totalcompra")
 let vazio=document.querySelector(".vazio")
+let add=document.querySelector(".add")
+let deletee=document.querySelector(".delete")
 
 
 
@@ -79,15 +81,23 @@ menos.addEventListener("click",()=>{
 //clicando no carrinho mostra quantos foram comprados//
 
 carrinho.addEventListener("click",()=>{
+    if(comprado.style.display==="none"){
+        comprado.style.display="block"
+        paiarow.style.display="none"
 
-    comprado.style.display="block"
-    paiarow.style.display="none"
+        
+    }
+    else{
+        comprado.style.display="none"
+        paiarow.style.display="flex"
+
+    }
+ 
 })
 // caso não tenha comprado nada e clicar no carrinho//
     function Compras(){
         if(quantidade > 0){
             vazio.style.display="none"
-            descricaoCompra.style.display="block"
             qntidadecompradaHTML.innerHTML=quantidade
             totalcompra.innerHTML="$"+125.00*quantidade
         }
@@ -98,6 +108,22 @@ carrinho.addEventListener("click",()=>{
 
     }
 
+    //adiciona ao carrinho//
+    add.addEventListener("click",()=>{
+        if(quantidade>0)
+        descricaoCompra.style.display="block"
+    })
+    // deleta tudo
+    deletee.addEventListener("click",()=>{
+        console.log("teste")
+        quantidade=0
+        descricaoCompra.style.display="none"
+        vazio.style.display="block"
+        qtdproduto.innerHTML=quantidade
+
+        
+
+    })
 
 
 
