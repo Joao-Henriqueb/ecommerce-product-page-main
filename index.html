@@ -6,9 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <title>Frontend <li>Men</li>tor | E-commerce product page</title>
 </head>
-<body>
+<body onload="esperar()">
 
   <header>
     <div class="menu">
@@ -26,10 +27,12 @@
       </ul>
       <div class="menu2">
         <img class="carrinho" src="images/icon-cart.svg" alt="">
-        <img src="images/image-avatar.png" alt=" bça">
+        <img src="images/image-avatar.png" alt="">
+        <p class="carqntidade"></p>
+
         <div class="arrow">
-          <div><img class="back" src="images/icon-previous.svg" alt=""></div>
-          <div><img class="next" src="images/icon-next.svg" alt=""></div>
+          <div class="back"><img  src="images/icon-previous.svg" alt=""></div>
+          <div class="next"><img  src="images/icon-next.svg" alt=""></div>
           
         </div>
       </div>
@@ -51,10 +54,12 @@
         </section>
       </section>
       <img class="imgatual" src="images/image-product-1.jpg" alt="">
-    </section>
-    <section id="thumb">
+      <section id="thumb">
 
+      </section>
     </section>
+   
+
     <section class="box2">
       <h4>Sneaker  Company</h4>
       <h1>Fall Limited Edition Sneakers</h1>

@@ -1,0 +1,158 @@
+@media screen and (min-width:1200px) {
+    /*header*/
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        width: 20%;
+    }
+    header >nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-right: 15rem;
+    }
+
+  
+    .iconmenu{
+        display: none;
+    }
+    .listamenu{
+        display: flex;
+        width: min-content;
+        height: min-content;
+        flex-direction: row;
+        color: hsl(220, 14%, 75%);
+        font-weight: 400;
+        position: relative;
+        font-size: 14px;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        background-color: transparent; 
+    }
+    .listamenu li:first-child{
+        margin-top: 0rem;
+    }
+    .listamenu li {
+        margin: 0rem 1rem;
+        cursor: pointer;
+        transition: 0.8s;
+        padding: 2rem 0 ;
+        border-bottom: 5px solid transparent;
+
+    }
+    .listamenu li:hover {
+        border-color:  hsl(26, 100%, 55%);
+        
+    }
+    .menu2 .arrow{
+        display: none;
+    }
+    .menu2 img:nth-child(2):hover{
+        border: 2px solid hsl(26, 100%, 55%);
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+    
+    
+
+
+
+    /*main*/
+    #box {
+        width: 450px;
+        margin-right: 5rem;
+    }
+    
+    /*carrinho de compra*/
+    #box .comprado{
+        width: 22%;
+        left: 63%;
+        bottom: 58%;
+    
+    }
+    /*carrinho de compra*/
+
+
+
+
+
+    #box .imgatual{
+        width: 450px;
+        border-radius: 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+    main #thumb{
+        display: block;
+        width: 450px;
+        height: min-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    main #thumb >img{
+        width: 100px;
+        border-radius: 10px;
+    }
+    main .box2{
+        width: 450px;
+        padding: 0;
+        height: min-content;
+    }
+    main .box2 h1{
+        font-size: 2.1em;
+    }
+    main .box2 p{
+        margin-bottom: 2rem;
+    }
+
+    .box2 .valor {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .box2 .valor s {
+        margin-top: 1rem;
+        margin-left: 0;
+        width: 80%;
+
+    }
+    .box2 .addcar{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .box2 .addcar .qntidade{
+        margin-top: 1rem;
+        width: 30%;
+        justify-content: space-between;
+    }
+    .box2 .addcar button{
+        margin:0;
+        width: 250px;
+    }
+
+
+
+
+
+
+
+    
+}
