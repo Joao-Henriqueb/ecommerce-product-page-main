@@ -19,7 +19,15 @@ function esperar(){
     let add=document.querySelector(".add")
     let deletee=document.querySelector(".delete")
     let carqntidade=document.querySelector(".carqntidade")
-    console.log(thumb)
+    let main=document.querySelector("main")
+    let thumbzoom=document.querySelector(".thumbzoom")
+    let thumb2=document.querySelector(".thumb2")
+    let xzinho=document.querySelector(".xzinho img")
+    let volta=document.querySelector(".volta")
+    let frente=document.querySelector(".frente")
+    let imgatualthumb=document.querySelector(".imgatualthumb")
+
+
 
 
     let images=["image-product-1.jpg",`image-product-2.jpg`,`image-product-3.jpg`,`image-product-4.jpg`]
@@ -85,7 +93,9 @@ function esperar(){
         if(comprado.style.display==="none"){
             comprado.style.display="block"
             arrowbaack.style.display="none"
-            arrownext.style.display="none"
+            arrownext.style.display="none"  
+            
+
 
             
         }
@@ -150,9 +160,43 @@ function esperar(){
     }
     
 
+    /*tentando fazer imagem vir pra frente backdroopfilter*/
+    for (const photot of images) {
+        const newPhoto = document.createElement('img');
+        newPhoto.setAttribute('src', `images/${photot}`);
+        thumb2.appendChild(newPhoto);
+      
+    }
+    /*abre o novo thumb ao clicar*/
+    imgatual.addEventListener("click",()=>{
+        thumbzoom.style.visibility="visible"
+        main.style.filter="blur(2px)"
 
+    })
+    xzinho.addEventListener("click",()=>{
+        thumbzoom.style.visibility="hidden"
+        main.style.filter="blur(0px)"
+    })
+    //mudando foto na nova thumb//
+    let i2=1
+    frente.addEventListener("click",()=>{
+        i2++
+        if(i2>4){
+            i2=1
+        }
+        imgatualthumb.setAttribute('src', "images/image-product-"+[i2]+".jpg")
+
+    })
+    volta.addEventListener("click",()=>{
+        i2--
+        if(i2<1){
+            i2=4
+        }
+        imgatualthumb.setAttribute('src', "images/image-product-"+[i2]+".jpg")
+
+    })
     
-
+    
 
 
 
