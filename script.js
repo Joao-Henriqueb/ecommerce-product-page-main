@@ -26,6 +26,8 @@ function esperar(){
     let volta=document.querySelector(".volta")
     let frente=document.querySelector(".frente")
     let imgatualthumb=document.querySelector(".imgatualthumb")
+    let selecionada=document.querySelector(".selecionada")
+    
 
     var largura = window.innerWidth // usei para aplicar javascript
     var altura = window.innerHeight
@@ -157,10 +159,18 @@ function esperar(){
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `images/${photot}`);
     thumb.appendChild(newImage);
-    newImage.addEventListener('click', e => {
-        imgatual.src = e.target.src
+    newImage.addEventListener('click', event => {
+        let ftThumb=document.querySelectorAll("#thumb img")
+        
+        ftThumb.forEach(element=>{
+            element.classList.remove("selecionada")
+        })
+        imgatual.src = event.target.src
+        event.target.setAttribute("class","selecionada")
     });
+    
     }
+    
     
 
     /*tentando fazer imagem vir pra frente backdroopfilter*/
