@@ -169,12 +169,13 @@ function esperar(){
     }
     /*abre o novo thumb ao clicar*/
     imgatual.addEventListener("click",()=>{
-        thumbzoom.style.visibility="visible"
+        thumbzoom.style.display="block"
         main.style.filter="blur(2px)"
-
+        
+      
     })
     xzinho.addEventListener("click",()=>{
-        thumbzoom.style.visibility="hidden"
+        thumbzoom.style.display="none"
         main.style.filter="blur(0px)"
     })
     //mudando foto na nova thumb//
@@ -197,49 +198,6 @@ function esperar(){
     })
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-    let thumbs=["image-product-1-thumbnail.jpg",`image-product-2-thumbnail.jpg`,`image-product-3-thumbnail.jpg`,`image-product-4-thumbnail.jpg`]
-
-
-
-
-
-
-
-
-    for (const image of images){
-        const newphoto=document.createElement('img')
-        console.log(newphoto)
-        newphoto.setAttribute('src', `images/${image}`)
-        newphoto.setAttribute('alt', alts[image])
-        thumb.appendChild(newphoto)
-        newphoto.addEventListener("click",e =>{
-            imgatual.src=e.target.src
-            imgatual.alt=e.target.alt
-
-        })
-        
-    }
-    */
-
 
 
 

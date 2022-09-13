@@ -179,7 +179,6 @@
  
     .thumbzoom{
         position: fixed;
-        visibility: hidden;
         filter: bluer(20px);
         transform: translateY(20%);
     }

@@ -268,13 +268,6 @@ main{
 
 
 
-
-
-
-
-
-#thumb img{
-    display: block;
-    float: left;
-    cursor: pointer;
+.thumbzoom{
+    display: none;
 }
