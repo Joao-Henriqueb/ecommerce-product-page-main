@@ -27,6 +27,9 @@ function esperar(){
     let frente=document.querySelector(".frente")
     let imgatualthumb=document.querySelector(".imgatualthumb")
 
+    var largura = window.innerWidth // usei para aplicar javascript
+    var altura = window.innerHeight
+  
 
 
 
@@ -169,8 +172,10 @@ function esperar(){
     }
     /*abre o novo thumb ao clicar*/
     imgatual.addEventListener("click",()=>{
-        thumbzoom.style.display="block"
-        main.style.filter="blur(2px)"
+        if(largura>400){
+            thumbzoom.style.display="block"
+            main.style.filter="blur(2px)"
+        }
         
       
     })
